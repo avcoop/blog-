@@ -1,0 +1,87 @@
+.con{
+    display:grid;
+    flex-wrap: wrap;
+    grid-template-columns: 800px;
+    grid-template-rows: 90px;
+    grid-template-areas: 
+    "steel"
+    "main"
+    "pie";
+
+}
+.box{
+    border: 1px solid black;
+
+}
+.Steelers{
+    grid-area: steel;
+    color: white;
+    font-family:sans-serif;
+    background-color: gold;
+
+}
+
+.pittsburgh{
+    grid-area: main;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    text-align: left;
+color: black;
+background-color: white;
+
+}
+
+.pie{
+    grid-area: pie;
+    font-size: 25px;
+    color: gold;
+background-color: black;
+text-align: center;
+}
+.cir {
+    height: 150px;
+    width: 225px;
+    border-radius: 50%;
+    border: 5px solid black;
+    border-bottom-color: goldenrod;
+   background-image: url('/Assets/Images/HeaderPitt.png');
+
+   background-size: cover;
+   
+  }
+
+  .container2{
+    display:flex;
+    flex-direction: column;
+    height: 70px;
+    width: 780px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    list-style: none;
+    
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  }
+
+  
+img{
+  
+    height: 175px;
+    width: auto;
+    
+  }
+
+
+@media(min-width:900px) {
+    .con{
+        display:grid;
+        grid-template-columns: 800px repeat(2, 1fr);
+        grid-template-rows: 65px 2000px 40px;
+        grid-template-areas: 
+        "steel steel steel steel steel steel"
+        "main main main main main main"
+        "pie pie pie pie pie pie";
+        }
+}
+
